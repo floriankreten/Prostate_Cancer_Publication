@@ -1,5 +1,10 @@
-﻿""" Testet with Python 3.7.13
-    Requires one non-standard package: plotly (tested with 5.9.0) """
+﻿Tested with Python 3.8.16 and plotly 5.9.0.
+(complete conda_env.yml in the repository)
+
+This repository contains a pure python implementation of our prostate-cancer model.
+This stochastic module can be used to grow three-dimensional tree-structures, as well as running a contact process on them - biologically speaking: placing mutations and letting the genotypes compete within the network.
+
+On top of that, modules for all sorts of easy-to-use storage, loading, graphical and Excel-output are given.
 
 For a ready-to-use example with graphical output, follow the lines along the prepared main.py.
 
