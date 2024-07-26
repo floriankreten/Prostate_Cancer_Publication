@@ -6,7 +6,10 @@ This stochastic module can be used to grow three-dimensional tree-structures, as
 
 On top of that, modules for all sorts of easy-to-use storage, loading, graphical and Excel-output are given.
 
-For a ready-to-use example with graphical output, follow the lines along the prepared main.py.
+For a ready-to-use example that explains the main steps, including storage and graphical output, follow the lines along the prepared main.py.
+
+
+------------------------------------------------------------------------------------
 
 
 IMPORTANT: Include INPUT_rates first into the main and define a type-of-rate (see example).
@@ -18,7 +21,6 @@ For the graphs with 2*10⁷ nodes we used in the publication and with the given 
 a single sim can take up to 30GB ram and depending on the CPU up to ~three hours.
 We recommend to test smaller examples first.
 
-------------------------------------------------------------------------------------
 
 The modules are sorted into 3 different groups:
 
