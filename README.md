@@ -6,7 +6,7 @@ This stochastic module can be used to grow three-dimensional tree-structures, as
 
 On top of that, modules for all sorts of easy-to-use storage, loading, graphical and Excel-output are given.
 
-For a complete example that explains the main steps, including storage and graphical output, follow the lines along the prepared main.py.
+For a complete example that explains the main steps (simulation, data-storage, evaluation, graphical), follow the lines along the prepared main.py.
 An example of a graphical output is given in the attached Online_Demo.html, which can be opened in any (?) browser.
 
 
