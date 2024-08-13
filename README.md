@@ -25,28 +25,28 @@ We recommend to test smaller examples first.
 
 The modules are sorted into 3 different groups:
 
-1) PROCESS-modules are relevant for the simulations and should not be touched
-2) EVAL-modules concern graphical output, storage and evaluations
+1) PROCESS-modules are relevant for the simulations and should not be touched.
+2) EVAL-modules concern graphical output, storage and evaluations.
 3) 	Via INPUT_rates, the entire behavior of a simulation can be defined (rates, types of events).
-	The main.py should be used for all user-defined scripting
+	The main.py should be used for all user-defined scripting.
 
 The graph-class defined in PROCESS_structures is the central object.
 It is a collection of vertices and some structures/information.
 A vertex is a structure that contains all locally relevant information:
-    position (in R^3), neighbors connected via edges, current genotype, rates of process at v
+    position (in R^3), neighbors connected via edges, current genotype, rates of process at v.
 
 The graph changes via a sequence of random events. At the moment, three events are implemented:
 PROCESS_growth, PROCESS_mutation, PROCESS_competition (PROCESS_radial_growth is not tested properly).
 
-The Gillespie-simulation is implemented in PROCESS_process, the underlying calculations are done in the PROCESS_event_manager
+The Gillespie-simulation is implemented in PROCESS_process, the underlying calculations are done in the PROCESS_event_manager.
 I recommend to leave these modules at peace :)
 
 All evaluation-modules are bundled into the EVAL_single_graph_evaluation module.
-The central object here is called "table_of_evaluation". After loading a graph into this table,
-you can evaluate it in all possible senses and produce some graphical output. See again the main for an example workflow
+The central object here is called table_of_evaluation. After loading a graph, 
+you can evaluate it in various ways, take samples ("biopsies"), and produce graphical output. See again the main for an example workflow.
 
 
-The data IN/OUT is handled via the EVAL_data_output module. Graphs and ancestral trees can be stored
-as SQL-databases. For working with stored data again, use the get_graph and get_tree functions from EVAL_data_output.
+The data IN/OUT is handled via the EVAL_data_output module. Complete graphs, and ancestral trees are stored as SQL-databases.
+For loading stored data into usable python objects, use the get_graph and get_tree functions from EVAL_data_output.
 
 
