@@ -10,6 +10,10 @@ For a complete example that explains the main steps (simulation, data-storage, e
 An example of a graphical output is given in the attached Online_Demo.html, which can be opened in any (?) browser.
 
 
+![Screenshot 2024-08-13 at 11-02-19 ](https://github.com/user-attachments/assets/8da62163-dd02-43b7-ae4e-28338760417d)
+
+
+
 ------------------------------------------------------------------------------------
 
 
