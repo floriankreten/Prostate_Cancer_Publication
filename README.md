@@ -2,8 +2,8 @@ This repository contains a pure python implementation of our prostate-cancer mod
 
 On top of that, modules for all sorts of easy-to-use storage, loading, graphical and Excel-output are given.
 
-For a complete example that explains the main steps (simulation, data-storage, evaluation, graphical), follow the lines along the prepared main.py.
-An example of a graphical output is given in the attached Online_Demo.html, which can be opened in any (?) browser.
+For a complete example with all main steps (simulation, data-storage, evaluation, graphical output), follow the lines along the vignette in the prepared main.py.
+An example of a graphical output is given in the attached Online_Demo.html, which can be opened via any browser.
 
 
 ![Screenshot 2024-08-13 at 11-02-19 ](https://github.com/user-attachments/assets/8da62163-dd02-43b7-ae4e-28338760417d)
