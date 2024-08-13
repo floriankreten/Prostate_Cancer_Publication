@@ -31,22 +31,21 @@ The modules are sorted into 3 different groups:
 	The main.py should be used for all user-defined scripting.
 
 The graph-class defined in PROCESS_structures is the central object.
-It is a collection of vertices and some structures/information.
+It is a collection of vertices, as well as some additional structures/information.
 A vertex is a structure that contains all locally relevant information:
-    position (in R^3), neighbors connected via edges, current genotype, rates of process at v.
+    position (in R^3), adjacent neighbors (=connected via edges), current genotype, current rates of the processes at the vertex.
 
 The graph changes via a sequence of random events. At the moment, three events are implemented:
 PROCESS_growth, PROCESS_mutation, PROCESS_competition (PROCESS_radial_growth is not tested properly).
 
 The Gillespie-simulation is implemented in PROCESS_process, the underlying calculations are done in the PROCESS_event_manager.
-I recommend to leave these modules at peace :)
 
 All evaluation-modules are bundled into the EVAL_single_graph_evaluation module.
-The central object here is called table_of_evaluation. After loading a graph, 
+The central object here is called "table_of_evaluation", with child "biopsy_table_of_evaluation". After loading a graph, 
 you can evaluate it in various ways, take samples ("biopsies"), and produce graphical output. See again the main for an example workflow.
 
 
 The data IN/OUT is handled via the EVAL_data_output module. Complete graphs, and ancestral trees are stored as SQL-databases.
 For loading stored data into usable python objects, use the get_graph and get_tree functions from EVAL_data_output.
-
-
+It is recommended to create a separate folder for each simulation, and therein store the graph.db, tree.db and possible evaluation files together.
+This way, the table_of_evaluation can take the folder-path as input.
