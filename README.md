@@ -15,8 +15,7 @@ Tested with Python 3.8.16 and plotly 5.9.0.
 
 
 IMPORTANT: Include INPUT_rates first into the main and define a type-of-rate (see example).
-	   Changing the rate-functions in a running session can be done, but is not recommended.
-	   Better store the graph and use a new instance.
+	   Changing the rate-functions in a running session is not recommended.
 
 
 For the graphs with 2*10⁷ nodes we used in the publication and with the given mutation rates,
