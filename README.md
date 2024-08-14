@@ -1,6 +1,6 @@
 This repository contains a pure python implementation of our prostate-cancer model: this stochastic module can be used to grow three-dimensional tree-structures, as well as to run a contact process on them - biologically speaking: placing mutations and letting the genotypes compete within the network.
 
-On top of that, modules for all sorts of easy-to-use storage, loading, graphical and Excel-output are given.
+On top of that, modules for all sorts of easy-to-use storage, loading, graphical and tabular output are given.
 
 For a complete example with all main steps (simulation, data-storage, evaluation, graphical output), follow the lines along the vignette in the prepared main.py.
 An example of a graphical output is given in the attached Online_Demo.html, which can be opened via any browser.
