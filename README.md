@@ -14,7 +14,7 @@ Tested with Python 3.8.16 and plotly 5.9.0.
 (complete conda_env.yml in the repository)
 
 
-IMPORTANT: Include INPUT_rates first into the main and define a type-of-rate (see example).
+IMPORTANT: We recommend to always load INPUT_rates and define a type-of-rate (see example) as a first step.
 	   Changing the rate-functions in a running session is not recommended.
 
 
