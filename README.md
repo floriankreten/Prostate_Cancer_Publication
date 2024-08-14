@@ -10,25 +10,23 @@ An example of a graphical output is given in the attached Online_Demo.html, whic
 
 
 
-Tested with Python 3.8.16 and plotly 5.9.0.
-(complete conda_env.yml in the repository)
+Tested with Python 3.8.16 and plotly 5.9.0 (complete conda_env.yml in the repository).
 
 
 IMPORTANT: We recommend to always load INPUT_rates and define a type-of-rate (see example) as a first step.
 	   Changing the rate-functions in a running session is not recommended.
 
 
-For the graphs with 2*10⁷ nodes we used in the publication and with the given mutation rates,
-a single sim can take up to 30GB ram and depending on the CPU up to ~three hours.
-We recommend to test smaller examples first.
+For the graphs with 2*10⁷ nodes that we analyzed and with the given mutation rates,
+a single sim can take up to 30GB ram - and depending on the CPU up to ~three hours.
+We recommend to run smaller test examples first.
 
 
 The modules are sorted into 3 different groups:
 
 1) PROCESS-modules are relevant for the simulations and should not be touched.
 2) EVAL-modules concern graphical output, storage and evaluations.
-3) 	Via INPUT_rates, the entire behavior of a simulation can be defined (rates, types of events).
-	The main.py should be used for all user-defined scripting.
+3) Via INPUT_rates, the entire behavior of a simulation can be defined, and always should be (if you do not run any sim, load a pre-defined setting as a placeholder).
 
 The graph-class defined in PROCESS_structures is the central object.
 It is a collection of vertices, as well as some additional structures/information.
@@ -42,10 +40,10 @@ The Gillespie-simulation is implemented in PROCESS_process, the underlying calcu
 
 All evaluation-modules are bundled into the EVAL_single_graph_evaluation module.
 The central object here is called "table_of_evaluation", with child "biopsy_table_of_evaluation". After loading a graph, 
-you can evaluate it in various ways, take samples ("biopsies"), and produce graphical output. See again the main for an example workflow.
+you can evaluate it in various ways, take samples ("biopsies"), as well as produce graphical output. See again the main for an example workflow.
 
 
-The data IN/OUT is handled via the EVAL_data_output module. Complete graphs, and ancestral trees are stored as SQL-databases.
-For loading stored data into usable python objects, use the get_graph and get_tree functions from EVAL_data_output.
+The data IN/OUT is handled via the EVAL_data_output module. Graphs and and ancestral trees are stored as SQL-databases.
+Use the get_graph and get_tree functions from EVAL_data_output for directly loading the database into usable python objects.
 It is recommended to create a separate folder for each simulation, and therein store the graph.db, tree.db and possible evaluation files together.
 This way, the table_of_evaluation can take the folder-path as input.
